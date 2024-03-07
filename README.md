@@ -5,15 +5,15 @@ in the cloud shell, enter the following command ```pip install google-cloud-func
 
 
 1. create new cloud function in google cloud console
-   environment: 2nd gen
-   function name: function-upload-csv-gcs-bq
-   region: region_of_your_storage_bucket
-   trigger type: cloud storage
-   event type: google.cloud.storage.object.v1.finalized
-   bucket: name_of_storage_bucket 
+   * environment: 2nd gen
+   * function name: function-upload-csv-gcs-bq
+   * region: region_of_your_storage_bucket
+   * trigger type: cloud storage
+   * event type: google.cloud.storage.object.v1.finalized
+   * bucket: name_of_storage_bucket 
 2. click next and update the code for main.py and requirements.txt 
-   runtime: python 3.9
-   entry point: process_csv
+   * runtime: python 3.9
+   * entry point: process_csv
 3. deploy
 
 
