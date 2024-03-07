@@ -21,11 +21,12 @@ def process_csv(event, context):
 
     # Process the CSV
     df = pd.read_csv(io.StringIO(csv_string))
-    df.columns = df.columns.str.lower()  # Convert column names to lowercase
+    df.columns = df.columns.str.lower()  # Example of Convert column names to lowercase
 
     # Load into BigQuery
     client = bigquery.Client()
-    dataset_id = 'cat-looker-core-argolis-demo.cat_demo_data'
+    # update the dataset_id below  with your project and dataset name 
+    dataset_id = 'your-project.your_dataset' 
     table_id = blob_name.replace('.csv', '')  # Table name from file name
 
     job_config = bigquery.LoadJobConfig(autodetect=True)  # Auto-detect schema
