@@ -3,7 +3,9 @@ step by step guide on how to use cloud function to detect uploaded csv in Google
 
 in the cloud shell, enter the following command ```pip install google-cloud-functions google-cloud-storage google-cloud-bigquery pandas pyarrow```
 
-before creating the cloud function, first set up a storage bucket, make sure its in the same region as your cloud function, second, create a dataset where the updated csv will land 
+before creating the cloud function: 
+* set up a storage bucket, make sure its in the same region as your cloud function
+* create a dataset in BQ where the updated csv will land 
 
 1. create new cloud function in google cloud console
    * environment: 2nd gen
