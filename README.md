@@ -20,4 +20,4 @@ before creating the cloud function:
 3. deploy
 
 
-to test, upload csv to the storage bucket, and see the table populate in BQ 
+to trigger, upload csv to the storage bucket, and see the table populate in BQ 
